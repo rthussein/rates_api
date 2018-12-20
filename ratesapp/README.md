@@ -3,22 +3,31 @@
 -Authors 
 Ryan HUssein
 
-Things you may want to cover:
 
-* Ruby version 2.5.3p105 (2018-10-18 revision 65156)
 
 * System dependencies
 
-* Configuration
+* System dependencies: mysql server , my sql client , rails (<= 5.3.0), ruby (<= 2.5.3), gem, bundler 
 
-* Database creation
+For installation of ruby and rails : https://gorails.com/setup/ubuntu/18.10
 
-* Database initialization
+For installation of mysql products: https://dev.mysql.com/doc/mysql-installation-excerpt/5.7/en/
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+# Steps:
+* run git clone _remote_URL_
+* cd into local cloned repo
+* run bundle intall (This installs all dependencies for your ruby environment)
+* Initialise database
 
-* Deployment instructions
+# Database initialisation
 
-* ...
+ -run rake db:create 
+ -run rake db:migrate
+ 
+ -run rails server 
+
+ 
+ # Viewing the app
+ 
+ * Open Web browser and visit localhost:3000/markets , /rates , /currencies to view API
