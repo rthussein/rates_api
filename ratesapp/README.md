@@ -1,11 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+-Authors 
+Ryan HUssein
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version 2.5.3p105 (2018-10-18 revision 65156)
 
 * System dependencies
 
