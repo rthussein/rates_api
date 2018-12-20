@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_20_212311) do
+ActiveRecord::Schema.define(version: 2018_12_20_223051) do
 
   create_table "currencies", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "currency_name"
@@ -25,6 +25,14 @@ ActiveRecord::Schema.define(version: 2018_12_20_212311) do
     t.datetime "updated_at", null: false
     t.index ["base_currency_id"], name: "index_markets_on_base_currency_id"
     t.index ["quoted_currency_id"], name: "index_markets_on_quoted_currency_id"
+  end
+
+  create_table "rates", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.bigint "market_id"
+    t.string "price"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["market_id"], name: "index_rates_on_market_id"
   end
 
 end
