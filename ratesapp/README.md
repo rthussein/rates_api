@@ -22,12 +22,12 @@ For installation of mysql products: https://dev.mysql.com/doc/mysql-installation
 
 # Database initialisation
 
- -run rake db:create 
- -run rake db:migrate
+* run rake db:create 
+* run rake db:migrate
  
- -run rails server 
+* run rails server 
 
  
- # Viewing the app
+# Viewing the app
  
- * Open Web browser and visit localhost:3000/markets , /rates , /currencies to view API
+* Open Web browser and visit localhost:3000/markets , /rates , /currencies to view API
