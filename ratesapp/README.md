@@ -1,7 +1,8 @@
 # README
 
--Authors 
-Ryan HUssein
+# Authors 
+* Ryan HUssein
+
 
 
 
@@ -14,13 +15,35 @@ For installation of ruby and rails : https://gorails.com/setup/ubuntu/18.10
 For installation of mysql products: https://dev.mysql.com/doc/mysql-installation-excerpt/5.7/en/
 
 
-# Steps:
+# Steps
+
+## Docker 
+
+prerequisite 
+
+docker 
+
+docker-compose
+
+
+```
+- docker build -t ratesbackend .
+- docker run -it --rm ratesbackend bundle exec rake test
+- docker run -itP ratesbackend
+- docker run -itP -v $(pwd):/app ratesbackend
+- docker-compose build 
+- docker-compose --rm app env
+- docker-compose build
+- docker-compose up
+- docker-compose run app rake db:create
+- docker-compose run app rake db:migrate
+- docker-compose run app rake db:seed
 * run git clone _remote_URL_
-* cd into local cloned repo
+* run cd rate_api
 * run bundle intall (This installs all dependencies for your ruby environment)
 * Initialise database
 
-# Database initialisation
+# Database Initialisation
 
 * run rake db:create 
 * run rake db:migrate
@@ -28,6 +51,6 @@ For installation of mysql products: https://dev.mysql.com/doc/mysql-installation
 * run rails server 
 
  
-# Viewing the app
+# Viewing the App
  
 * Open Web browser and visit localhost:3000/markets , /rates , /currencies to view API
