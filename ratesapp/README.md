@@ -43,14 +43,14 @@ docker & docker-compose
 * docker-compose run app rake db:seed
  
 
-# Or without Docker
+## Or without Docker
 
 * run git clone _remote_URL_
 * run cd rate_api
 * run bundle intall (This installs all dependencies for your ruby environment)
 * Initialise database
 
-# Database Initialisation
+## Database Initialisation
 
 * run rake db:create 
 * run rake db:migrate
@@ -58,6 +58,6 @@ docker & docker-compose
 * run rails server 
 
  
-# Viewing the App
+## Viewing the App
  
 * Open Web browser and visit localhost:3000/markets , /rates , /currencies to view API
